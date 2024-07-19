@@ -34,44 +34,43 @@ Before running this application, ensure you have the following installed:
 ### Backend (Spring Boot)
 
 1. Clone the repository:
-
-   
-bash
+```
    git clone https://github.com/your-username/todo-app.git
    cd todo-app/backend
-
+```
 2. Set up MySQL database:
-  -Create a MySQL database named todo_db.
+    - Create a MySQL database named todo_db.
    
 3. Configure MySQL database credentials in application.properties
-bash 
+```
     spring.datasource.url=jdbc:mysql://localhost:3306/todo_db
     spring.datasource.username=your_mysql_username
     spring.datasource.password=your_mysql_password
     spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-
-4. ./mvnw spring-boot:run
+```
+4. Run the backened Server: 
    
-bash
+```
        ./mvnw spring-boot:run
-
+```
 The backend server will start at http://localhost:8080.
 
 ## Frontend (React JS)
 1. Navigate to the frontend directory:
-bash
-    Copy code
+```
     cd ../frontend
-
-2. Install dependencies:
-
-    
-bash
-      npm install
+```   
+2. Install dependencies:    
+ ``` 
+    npm install
+ ```
 3. Start the React development server:
-bash
+ ``` 
    npm start
+```
   The frontend server will start at http://localhost:3000.
+
+  
 4. Open your browser and go to http://localhost:3000 to view the Todo application.
 
 ## API Endpoints
